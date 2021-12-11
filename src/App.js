@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
-function HolaMundo(nombre){
-  var presentacion = <h2>Hola, soy {nombre}</h2>;
+function HolaMundo(nombre, edad){
+  var presentacion = (
+  <div>
+    <h2>Hola, soy {nombre}</h2>
+    <h3>Tengo {edad} años</h3>
+  </div>
+  );
+  
 
   return presentacion;
 }
@@ -17,7 +23,7 @@ function App() {
         <p>Welcome to course React 
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        {HolaMundo(nombre)}
+        {HolaMundo(nombre, 31)}
         <a
           className="App-link"
           href="https://reactjs.org"
