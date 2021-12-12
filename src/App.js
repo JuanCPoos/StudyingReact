@@ -4,6 +4,7 @@ import './assets/css/App.css';
 // Import Components
 import MiComponente from './components/MiComponente';
 
+
 function HolaMundo(nombre, edad){
   var presentacion = (
   <div>
@@ -18,7 +19,7 @@ function HolaMundo(nombre, edad){
 
 function App() {
   var nombre = "Juan";
-  
+   
   return (
     <div className="App">
       <header className="App-header">
@@ -26,12 +27,14 @@ function App() {
         <p>Welcome to course React 
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        {HolaMundo(nombre, 31)}
-        <section className='componentes'>
-          
-          <MiComponente />
 
+        {HolaMundo(nombre, 31)}
+
+        <section className='componentes'>
+          <MiComponente />  
+          
         </section>
+
       </header>
     </div>
   );
